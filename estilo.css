@@ -1,0 +1,266 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+/*SUBTITULO*/
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+/*TITULO*/
+
+@import url('https://fonts.googleapis.com/css?family=Wallpoet&display=swap');
+/*/@font-face{
+	font-family: 'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}*/
+
+body{
+	font-family: 'Arial', sans-serif;
+	background-color: #dddddd;
+	color: black;
+	}
+
+div#interface{
+	width: 1250px; 
+	background-color: #ffffff;
+	margin: -20px auto 0px auto;  /* Margens na web trabalham na visualização da tela com ( cima, direita, baixo, esquerda ), sentido horario*/
+	/*	cima direita baixo esquerda */
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	padding: 20px;  /* Ou padding: 15px 15px 15px 15px;*/
+}
+
+p{
+	text-align: justify;
+	text-indent: 40px;
+}
+
+a{
+	color: #606060;
+	text-decoration: none;
+}
+
+a:hover{text-decoration: underline;}
+
+
+/* CABEÇALHO */
+
+header#cabecalho img#icone{
+	position: absolute;
+	left: 1140px; 
+	top: 50px;
+}
+
+header#cabecalho{
+	border-bottom: 1px #606060 solid;
+	height: 110pt;
+	background:url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+
+header#cabecalho h1{
+	font-family: 'Orbitron', sans-serif;
+	font-size: 27pt;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	padding: 0px;
+	margin-bottom: 0px; 
+}
+
+header#cabecalho h2{
+	font-family: 'Titillium Web', sans-serif;
+	color: #888888;
+	font-size: 15pt;
+	padding: 0px;
+	margin-top: 0px;
+}
+
+
+
+/* Formatação de imagens com legendas */
+
+/* Sempre ao utilizar um parametro "class" no CSS utilize o 'nome da tag.o nome da classe'*/
+figure.foto-legenda{
+	position: relative;	 /* A posição 'relative' faz com que seje possivel modificar a posição somente no "conteiner" do objeto, no caso a legenda da foto*/
+	border: 8px solid white;
+	box-shadow: 2px 2px 4px black;
+}
+
+figure.foto-legenda img{
+	width: 100%;
+	height: 100%;
+}
+
+figure.foto-legenda figcaption{
+	opacity: 0;
+	position: absolute;	 /* A posição 'absolute' faz com que seje possivel modificar a posição por toda a extenção de área do site*/
+	top: 0px;
+	background-color: rgba(0,0,0,.4);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;  /* O parametro 'padding' serve para criar um espaço dentro de uma imagem ou frase*/
+	box-sizing: border-box;
+	transition: opacity 1s;
+}
+/* O comando a seguir utilizando o 'hover' serve para qndo passar o mouse sobre a imagem, ai sim, aparece a legenda dando um simples e bom efeito*/
+figure.foto-legenda:hover figcaption{opacity: 1;}
+
+
+
+/* Formatação do MENU */
+
+nav#menu{display: block;}
+
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;  /* A posição 'absolute' faz com que seje possivel modificar a posição por toda a extenção de área do site*/
+	top: -20px;
+	left: 650px; /*710px*/
+}
+
+nav#menu li{
+	display: inline-block;
+	background-color: #dddddd;
+	padding: 10px;
+	margin:	2px;	/* O Parametro 'magin' serve para controlar o espaço fora do objeto*/
+	-webkit-transition: background-color 800ms;
+	-o-transition: background-color 800ms;
+	transition: background-color 800ms;
+}
+
+nav#menu li:hover{		/*Houver é utilizado em efeitos dinamicos ao passar o mouse */
+	background-color: #606060;
+}
+
+nav#menu h1{display: none;}
+
+nav#menu a{
+	color: black;
+	text-decoration: none;
+}
+
+nav#menu a:hover{color: white;}
+
+section#corpo{
+	display: block;
+	width: 600px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right: 15px; 
+}
+
+article#noticia-principal h2{
+	font-size: 15pt;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1{
+	font-family: 'Wallpoet', cursive;
+	font-size: 22pt;
+	color: black;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	margin-bottom: 0px;
+}
+
+header#cabecalho-artigo h2{
+	color: #888888;
+	background-color: white;
+	font-size: 13pt;
+	text-align: left;
+}
+
+.right{
+	text-align: right;
+	font-size: 11pt;
+}
+
+.up{
+	color:#888888;
+	font-size: 13pt;
+}
+
+table#tabela1{
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table#tabela1 td{
+	border: 1px solid #606060;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+table#tabela1 td.ce{
+	color: white;
+	background-color: #606060;
+	vertical-align: top;
+	font-weight: 900;
+}
+
+table#tabela1 td.cd{
+	background-color: #cecece;
+}
+
+table#tabela1 caption{
+	color: #888888;
+	font-size: 12pt;
+	font-weight: bolder;
+}
+
+table#tabela1 caption span{
+	display: block;
+	float: right;
+	color: black;
+	font-size: 8pt;
+	margin-top: 10px;
+}
+
+video#play01{
+	display: block;
+	position: relative;
+	width: 560px;
+	margin: auto auto 5px auto;
+}
+video#play02{
+	display: block;
+	position: relative;
+	width: 590px;
+	margin: 5px;
+}
+
+aside#lateral{
+	display: block;
+	width: 600px;
+	float: right;
+	background-color: #dddddd;
+	padding: 10px;
+	margin-top: 10px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.6);
+}
+
+aside#lateral h1{
+	font-family:'Wallpoet', cursive;
+	font-size: 23pt;
+	color: black;
+}
+
+aside#lateral h2{
+	font-size: 15pt;
+	color: white;
+	background-color: #606060;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}
+
+footer#rodape{
+	clear: both;
+	border-top: 1px solid #606060;
+}
+
+footer#rodape p{text-align: center;}
+p#links{color: #606060;}
+
+footer#rodape a{text-decoration: none;}
+footer#rodape a:hover{text-decoration: underline;}

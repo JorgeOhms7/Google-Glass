@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+section#conteudo{
+	width: 1000px;
+	margin: auto;
+}
+
+iframe#frame-specs{
+	width: 410px;
+	height: 280px;
+	border: none;
+	overflow: hidden;
+}
+
+/*iframe#frame-specs::-webkit-scrollbar{		Essa opção seria utilizada aqui no CSS, mas não funcionou....
+												Por isso no arquivo html (specs.html), na tag do iframe, <iframe> eu coloquei a função 'scrolling="no"'
+	display: none;
+}*/
